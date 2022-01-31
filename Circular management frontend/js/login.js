@@ -26,13 +26,13 @@ async function getUser()
         if(bool){
           if(result[0].isadmin)
           {
-              setTimeout(()=>{ location.href = "../htmlPages/admin_loggin/login_admin.html"; },
+              setTimeout(()=>{ location.href = "./htmlPages/admin_loggin/login_admin.html"; },
      800);
           }
           else{
               const nam=result[0].firstname+" "+result[0].lastname;
             localStorage.setItem('name', nam);
-            setTimeout(()=>{ location.href = "../htmlPages/staff_login/login_user.html"; },
+            setTimeout(()=>{ location.href = "./htmlPages/staff_login/login_user.html"; },
             800);
           }
         }
